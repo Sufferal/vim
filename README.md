@@ -27,7 +27,9 @@ For example, `3j` means move down 3 lines or `d3j` means delete 3 lines down.
 
 ### Insert Mode
 - `i` - Insert text before the cursor
+- `I` - Insert text at the start of the line
 - `a` - Insert text after the cursor
+- `A` - Insert text at the end of the line
 - `o` - Insert text on the next line
 - `O` - Insert text on the previous line
 - `Esc` or `Ctrl + C` - Exit insert mode
@@ -44,6 +46,17 @@ For example, `3j` means move down 3 lines or `d3j` means delete 3 lines down.
 - `e` - Move to the end of the next word
 - `b` - Move to the start of the previous word
 - `ge` - Move to the end of the previous word
+
+## Position 
+- `_` - Move to the first non-blank character of the line (similar to `0`, but ignores whitespace)
+- `$` - Move to the end of the line
+- `0` - Move to the start of the line
+- `f` - Move to the next occurrence of a character. For example, `fa` moves to the next 'a' character.
+- `F` - Move to the previous occurrence of a character
+- `t` - Move to the character before the next occurrence of a character
+- `T` - Move to the character after the previous occurrence of a character
+- `,` - Repeat the last `f`, `t`, `F`, or `T` command in the opposite direction
+- `;` - Repeat the last `f`, `t`, `F`, or `T` command in the same direction
 
 ## Commands
 - `d` - Delete
