@@ -24,6 +24,21 @@ For example, `3j` means move down 3 lines or `d3j` means delete 3 lines down.
 - `p` - Paste after cursor
 - `P` - Paste before cursor
 - `x` - Delete character under the cursor
+- `r` - Replace character under the cursor
+
+#### Search
+- `/` - Search forward
+  - `n` - Move to the next search result
+  - `N` - Move to the previous search result
+- `?` - Search backward, now `n` and `N` will move in the opposite direction
+- `*` - Search for the word under the cursor
+- `#` - Search for the word under the cursor in the opposite direction
+
+#### Vertical Movement
+- `{` - Move to the start of the paragraph
+- `}` - Move to the end of the paragraph
+- `gg` - Move to the start of the file
+- `G` - Move to the end of the file
 
 ### Insert Mode
 - `i` - Insert text before the cursor
@@ -33,6 +48,10 @@ For example, `3j` means move down 3 lines or `d3j` means delete 3 lines down.
 - `o` - Insert text on the next line
 - `O` - Insert text on the previous line
 - `Esc` or `Ctrl + C` - Exit insert mode
+
+### Command-line Mode
+- `:` - Enter command-line mode
+- `:5` - Move to line 5
 
 ## Navigation
 ### Basic
