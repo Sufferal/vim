@@ -25,6 +25,9 @@ For example, `3j` means move down 3 lines or `d3j` means delete 3 lines down.
 - `P` - Paste before cursor
 - `x` - Delete character under the cursor
 - `r` - Replace character under the cursor
+- `R` - Replace mode
+- `s` - Substitute character under the cursor
+- `%` - Move to the matching parenthesis, bracket, or brace
 
 #### Search
 - `/` - Search forward
@@ -81,10 +84,28 @@ For example, `3j` means move down 3 lines or `d3j` means delete 3 lines down.
 - `d` - Delete
   - `dd` - Delete line
   - `dw` - Delete word 
+  - `d$` or `D` - Delete to the end of the line
+  - `d0` - Delete to the start of the line
 - `y` - Yank (copy)
   - `yy` - Yank line
   - `yw` - Yank word
+- `c` - Change
+  - `cc` - Change line
+  - `cw` - Change word
+  - `c$` - Change to the end of the line
+  - `c0` - Change to the start of the line
 
 ## History
 - `u` - Undo
 - `Ctrl + R` - Redo
+
+## Advanced
+- `vi)` - Select text inside parentheses. It works with other characters too, like `vi{`, `vi[`, `vi'`, `vi"`. It also works with words, like `viw`.
+- `va)` - Select text inside parentheses and the parentheses themselves. 
+- `viW` - Select text inside a word. 
+- `"*y` - Copy to the system clipboard
+- `"*p` - Paste from the system clipboard
+- `va}V` - Select the current block of code (useful for deleting or copying a function)
+- `vap` - Select the current paragraph. Also works with `d` and `y` commands.
+- `dip` - Delete inside a paragraph
+- `vi{` - Select inside curly braces (useful for getting to the bottom of a function)
